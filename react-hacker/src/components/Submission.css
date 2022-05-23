@@ -1,0 +1,35 @@
+.titleAndUrl {
+  display: flex;
+}
+.titleAndUrl p {
+  margin: 10px 3px 0px 0px;
+}
+.otros {
+  margin-left: 8px;
+  font-size: 12px;
+  display: flex;
+}
+a:link {
+  color: gray;
+  text-decoration: none;
+  border-bottom: none;
+  margin: 0px 3px 0px 3px;
+}
+a:visited {
+  color: gray;
+  border-bottom: none;
+  margin: 0px 3px 0px 3px;
+}
+a:hover {
+  color: darkgray;
+  text-decoration: underline;
+  margin: 0px 3px 0px 3px;
+}
+.url {
+  margin: 11px 3px 0px 0px !important;
+  color: #888 !important;
+  font-size: 14px;
+}
+.com {
+  color: black !important;
+}

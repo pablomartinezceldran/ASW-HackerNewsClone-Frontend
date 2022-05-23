@@ -1,0 +1,17 @@
+.sub {
+  background-color: #f6f6ef;
+  display: flex;
+}
+.content {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.numAndVote {
+  display: flex;
+  align-items: center;
+  min-width: 20px;
+}
+table {
+  width: 100%;
+}
