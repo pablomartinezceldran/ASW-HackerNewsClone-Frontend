@@ -1,15 +1,16 @@
 import "./App.css";
 import React from "react";
-import Navbar from "./components/Navbar";
-import { BrowserRouter as Router, Routes , Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Views/Home";
+import Submit from "./Views/Submit";
 
 function App() {
   return (
     <>
       <Router>
-        <Navbar />
         <Routes>
-          <Route exact path="/" />
+          <Route path='/' element={<Home />} />
+          <Route path='/submit' element={<Submit />} />
         </Routes>
       </Router>
     </>
