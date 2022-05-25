@@ -7,7 +7,7 @@ function Submission(props) {
     <div className='content'>
       <div className='titleAndUrl'>
         <p>{props.title}</p>
-        <a className='url' href={props.url}>
+        <a className='url' href={props.url} target='_blank'>
           ({props.url})
         </a>
       </div>

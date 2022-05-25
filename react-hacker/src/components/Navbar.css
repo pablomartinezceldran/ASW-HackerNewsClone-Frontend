@@ -1,0 +1,15 @@
+.navigation {
+  background-color: #ff6600;
+  margin: 2px;
+  margin-bottom: -4px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a {
+  color: black !important;
+}
+.title {
+  margin: 0px 20px 0px 0px;
+}
+.title a:hover {
+  text-decoration: none !important;
+}
