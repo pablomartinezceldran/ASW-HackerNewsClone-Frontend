@@ -10,7 +10,7 @@ function Home() {
         <Navbar />
       </tr>
       <tr>
-        <Submissions />
+        <Submissions order='votes' />
       </tr>
     </table>
   );

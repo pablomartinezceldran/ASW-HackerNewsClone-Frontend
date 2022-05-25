@@ -4,10 +4,10 @@ import Submission from "./Submission";
 import LikeButton from "./LikeButton";
 import "./Submissions.css";
 
-function Submissions() {
+function Submissions(props) {
   const [subs, setSubs] = useState([]);
 
-  getSubmissions("votes").then((response) => {
+  getSubmissions(props.order).then((response) => {
     setSubs(response);
   });
 
