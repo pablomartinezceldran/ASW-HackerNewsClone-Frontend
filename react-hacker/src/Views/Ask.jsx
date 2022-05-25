@@ -3,18 +3,18 @@ import Navbar from "../components/Navbar";
 import Submissions from "../components/Submissions";
 import "./Home.css";
 
-function Newest() {
+function Ask() {
   return (
     <table>
       <tbody>
         <tr>
           <td>
-            <Navbar current='newest' />
+            <Navbar current='ask' />
           </td>
         </tr>
         <tr>
           <td>
-            <Submissions order='creation' />
+            <Submissions order='ask' />
           </td>
         </tr>
         <tr>
@@ -28,4 +28,4 @@ function Newest() {
     </table>
   );
 }
-export default Newest;
+export default Ask;
