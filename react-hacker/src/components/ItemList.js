@@ -28,7 +28,12 @@ function ItemList(props) {
             <tr className='sub' key={i}>
               <td className='numAndVote'>{i + 1}.</td>
               <td className='con'>
-                <Comment text={comm.text} votes={comm.votes} createdAt={comm.createdAt} />
+                <Comment
+                  id={comm._id}
+                  text={comm.text}
+                  votes={comm.votes}
+                  createdAt={comm.createdAt}
+                />
               </td>
             </tr>
           ))}

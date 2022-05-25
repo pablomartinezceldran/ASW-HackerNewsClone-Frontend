@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
@@ -28,7 +28,7 @@ function Navbar(props) {
               )}
             </NavLink>
             |
-            <NavLink className='nav-link' to='/threads'>
+            <NavLink className='nav-link' to='/users/Pablo/comments'>
               {props.current === "threads" ? (
                 <div className='current'>threads</div>
               ) : (

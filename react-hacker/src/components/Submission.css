@@ -10,19 +10,19 @@
   display: flex;
 }
 a:link {
-  color: gray;
-  text-decoration: none;
+  color: gray !important;
+  text-decoration: none !important;
   border-bottom: none;
   margin: 0px 3px 0px 3px;
 }
 a:visited {
-  color: gray;
-  border-bottom: none;
+  color: gray !important;
+  border-bottom: none !important;
   margin: 0px 3px 0px 3px;
 }
 a:hover {
-  color: darkgray;
-  text-decoration: underline;
+  color: darkgray !important;
+  text-decoration: underline !important;
   margin: 0px 3px 0px 3px;
 }
 .url {
@@ -32,4 +32,29 @@ a:hover {
 }
 .com {
   color: black !important;
+}
+.prof0 {
+  padding-left: 20px;
+}
+.prof1 {
+  padding-left: 50px;
+}
+.prof2 {
+  padding-left: 80px;
+}
+.prof3 {
+  padding-left: 110px;
+}
+.prof4 {
+  padding-left: 140px;
+}
+.btn {
+  border: none;
+  background-color: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  display: inline-block;
+}
+.btn:hover {
+  text-decoration: underline;
 }

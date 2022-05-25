@@ -1,0 +1,46 @@
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 10pt;
+  color: #828282;
+}
+td {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 10pt;
+  color: #828282;
+}
+
+a:link {
+  color: #000000;
+  text-decoration: none;
+}
+a:visited {
+  color: #828282;
+  text-decoration: none;
+}
+
+.tdSubmit {
+  line-height: 12px;
+  height: 10px;
+  padding-left: 0px;
+}
+
+.input {
+  width: 40%;
+}
+
+.bottomSpace {
+  height: 50px;
+}
+
+.textSeparation {
+  padding-right: 100px;
+}
+
+.formTable {
+  background-color: #f6f6ef;
+  width: 84%;
+}
+
+.label {
+  padding-left: 50px;
+}
