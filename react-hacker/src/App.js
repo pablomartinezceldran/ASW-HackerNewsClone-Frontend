@@ -5,6 +5,7 @@ import Home from "./Views/Home";
 import Submit from "./Views/Submit";
 import Newest from "./Views/Newest";
 import UserInfo from "./Views/UserInfo";
+import Ask from "./Views/Ask";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/submit' element={<Submit />} />
           <Route path='/newest' element={<Newest />} />
+          <Route path='/ask' element={<Ask />} />
           <Route path='/users'>
             <Route
               path=':userId'

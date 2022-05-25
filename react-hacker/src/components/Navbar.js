@@ -1,12 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
-function Navbar() {
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
-  const closeMenu = () => setClick(false);
+function Navbar(props) {
   return (
     <div className='navigation'>
       <nav className='navbar'>
@@ -17,58 +13,48 @@ function Navbar() {
           </div>
           <div>
             <NavLink className='nav-link' to='/newest'>
-              new
+              {props.current === "newest" ? (
+                <div className='current'>new</div>
+              ) : (
+                <div>new</div>
+              )}
             </NavLink>
             |
             <NavLink className='nav-link' to='/submit'>
-              submit
+              {props.current === "submit" ? (
+                <div className='current'>submit</div>
+              ) : (
+                <div>submit</div>
+              )}
             </NavLink>
             |
             <NavLink className='nav-link' to='/threads'>
-              threads
+              {props.current === "threads" ? (
+                <div className='current'>threads</div>
+              ) : (
+                <div>threads</div>
+              )}
             </NavLink>
             |
             <NavLink className='nav-link' to='/ask'>
-              ask
+              {props.current === "ask" ? (
+                <div className='current'>ask</div>
+              ) : (
+                <div>ask</div>
+              )}
             </NavLink>
             |
             <NavLink className='nav-link' to='/users/Pablo'>
-              Pablo
+              {props.current === "user" ? (
+                <div className='current'>Pablo</div>
+              ) : (
+                <div>Pablo</div>
+              )}
             </NavLink>
           </div>
         </div>
       </nav>
     </div>
-
-    // <>
-    //   <div className='navbar'>
-    //     <div className='navbar-content'>
-    //       <Link to='/' className='navbar-logo'>
-    //         HackerNews <i className='fab fa-typo3' />
-    //       </Link>
-    //       <div className='menu-icon' onClick={handleClick}>
-    //         <i className={click ? "fa fa-times" : "fa fa-bars"} />
-    //       </div>
-    //       <ul className={click ? "nav-menu active" : "nav-menu"}>
-    //         <li className='nav-item'>
-    //           <Link to='/' className='nav-links' onClick={closeMenu}>
-    //             Index
-    //           </Link>
-    //         </li>
-    //         <li className='nav-item'>
-    //           <Link to='/newest' className='nav-links' onClick={closeMenu}>
-    //             Newest
-    //           </Link>
-    //         </li>
-    //         <li className='nav-item'>
-    //           <Link to='/submit' className='nav-links' onClick={closeMenu}>
-    //             Submit
-    //           </Link>
-    //         </li>
-    //       </ul>
-    //     </div>
-    //   </div>
-    // </>
   );
 }
 

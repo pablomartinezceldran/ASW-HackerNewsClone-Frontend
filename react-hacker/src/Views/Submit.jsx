@@ -6,12 +6,18 @@ import "./Submit.css";
 function Submit() {
   return (
     <table>
-      <tr>
-        <Navbar />
-      </tr>
-      <tr>
-        <SubmitForm />
-      </tr>
+      <tbody>
+        <tr>
+          <td>
+            <Navbar current='submit' />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <SubmitForm />
+          </td>
+        </tr>
+      </tbody>
     </table>
   );
 }

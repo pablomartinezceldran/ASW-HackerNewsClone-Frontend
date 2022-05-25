@@ -16,7 +16,7 @@ function UserInfo(props) {
       <tbody>
         <tr>
           <td>
-            <Navbar />
+            <Navbar current='user' />
           </td>
         </tr>
         <tr>
