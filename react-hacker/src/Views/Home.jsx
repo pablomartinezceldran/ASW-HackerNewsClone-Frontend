@@ -8,10 +8,14 @@ function Home() {
     <table>
       <tbody>
         <tr>
-          <Navbar />
+          <td>
+            <Navbar />
+          </td>
         </tr>
         <tr>
-          <Submissions order='votes' />
+          <td>
+            <Submissions order='votes' />
+          </td>
         </tr>
       </tbody>
     </table>
