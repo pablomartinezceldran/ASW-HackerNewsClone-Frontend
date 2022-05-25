@@ -6,12 +6,14 @@ import "./Home.css";
 function Home() {
   return (
     <table>
-      <tr>
-        <Navbar />
-      </tr>
-      <tr>
-        <Submissions order='votes' />
-      </tr>
+      <tbody>
+        <tr>
+          <Navbar />
+        </tr>
+        <tr>
+          <Submissions order='votes' />
+        </tr>
+      </tbody>
     </table>
   );
 }

@@ -13,24 +13,26 @@ function Submissions(props) {
 
   return (
     <table>
-      {subs.map((sub, i) => (
-        <tr className='sub' key={i}>
-          <td className='numAndVote'>
-            {i + 1}. <LikeButton />
-          </td>
-          <td className='con'>
-            <Submission
-              numSub={i + 1}
-              title={sub.title}
-              votes={sub.votes}
-              createdAt={sub.createdAt}
-              user={sub.user}
-              url={sub.url}
-              numComments={sub.numcomments}
-            />
-          </td>
-        </tr>
-      ))}
+      <tbody>
+        {subs.map((sub, i) => (
+          <tr className='sub' key={i}>
+            <td className='numAndVote'>
+              {i + 1}. <LikeButton />
+            </td>
+            <td className='con'>
+              <Submission
+                numSub={i + 1}
+                title={sub.title}
+                votes={sub.votes}
+                createdAt={sub.createdAt}
+                user={sub.user}
+                url={sub.url}
+                numComments={sub.numcomments}
+              />
+            </td>
+          </tr>
+        ))}
+      </tbody>
     </table>
   );
 }
