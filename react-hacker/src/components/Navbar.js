@@ -32,7 +32,7 @@ function Navbar() {
               ask
             </NavLink>
             |
-            <NavLink className='nav-link' to='/user'>
+            <NavLink className='nav-link' to='/users/Pablo'>
               Pablo
             </NavLink>
           </div>

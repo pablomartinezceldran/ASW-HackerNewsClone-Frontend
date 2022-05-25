@@ -21,7 +21,6 @@ function Submissions(props) {
             </td>
             <td className='con'>
               <Submission
-                numSub={i + 1}
                 title={sub.title}
                 votes={sub.votes}
                 createdAt={sub.createdAt}

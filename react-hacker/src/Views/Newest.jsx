@@ -3,18 +3,29 @@ import Navbar from "../components/Navbar";
 import Submissions from "../components/Submissions";
 import "./Home.css";
 
-function Home() {
+function Newest() {
   return (
     <table>
       <tbody>
         <tr>
-          <Navbar />
+          <td>
+            <Navbar />
+          </td>
         </tr>
         <tr>
-          <Submissions order='creation' />
+          <td>
+            <Submissions order='creation' />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <center>
+              <h4> Hacker News FIB 2022 </h4>
+            </center>
+          </td>
         </tr>
       </tbody>
     </table>
   );
 }
-export default Home;
+export default Newest;
