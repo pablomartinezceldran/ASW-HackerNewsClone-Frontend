@@ -6,6 +6,7 @@ import Submit from "./Views/Submit";
 import Newest from "./Views/Newest";
 import UserInfo from "./Views/UserInfo";
 import Ask from "./Views/Ask";
+import Submission from "./Views/Submission";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
               element={<UserInfo username='Pablo Martínez Celdrán' info='lcomms' />}
             />
           </Route>
+          <Route path='/submissions/:submissionId' element={<Submission />}></Route>
         </Routes>
       </Router>
     </>
